@@ -1,0 +1,57 @@
+/* Custom CSS to remove borders and padding between columns */
+.table th, .table td {
+    border: none;
+}
+
+/* Remove separation between columns */
+.table td, .table th {
+    vertical-align: middle;
+    padding: 0.75rem 0.5rem; /* Reduced padding to avoid column separation effect */
+}
+
+/* Image size and style */
+.table img {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+}
+
+.text-danger {
+    color: black !important; /* Change the color to black */
+}
+
+/* Styling for Remove button */
+.remove-btn {
+    background-color: #b61111;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.remove-btn:hover {
+    background-color: #3c3d37;
+    color: white;
+}
+
+/* Styling for Checkout button */
+.checkout-btn {
+    background-color: #3c3d37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #1e201e;
+    color: white;
+}
+
+.cart-icon {
+    display: inline-block; /* Ensures the container size fits the icon */
+    
+}
+
+#cart-count {
+    top: 0px; /* Adjust this value to move the badge up */
+    right: 5px; /* Adjust this value to move the badge to the left */
+}

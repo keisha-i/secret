@@ -1,0 +1,209 @@
+
+/* Navbar Styling */
+#nav {
+    background: #ffffff;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0,0,0,0.15);
+}
+
+/* Form Styling */
+.form-control {
+    color: #1e201e; /* Dark gray from palette */
+    border-radius: 8px;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.form-control:focus,
+.form-control:hover {
+    border-color: #697565; /* Olive green from palette */
+    box-shadow: 0 0 5px rgba(105, 117, 101, 0.5);
+}
+
+/* Sidebar Styling */
+#side {
+    background: #ffffff;
+    min-width: 250px;
+    max-width: 30vh;
+    height: 100vh;
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: all 0.3s;
+}
+
+#side.active {
+    margin-left: 0;
+}
+
+#side .nav-link {
+    color: #3c3d37; /* Medium gray from palette */
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#side .nav-link:hover,
+#side .nav-link:focus {
+    color: #ffffff;
+    background-color: #697565; /* Olive green hover */
+}
+
+#side .nav-link:hover i {
+    color: #ffffff;
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart-btn {
+    background-color: #343434; /* Dark gray from the palette */
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 10px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #1e201e; /* Darker shade for hover effect */
+}
+
+/* Buy Button Styling */
+.buy-btn {
+ /* Olive green from the palette */
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 10px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/* Post Card Styling */
+.card {
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    color: #1e201e; /* Dark gray text */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styling */
+.box {
+    width: 40px;
+    height: 40px;
+    background: gray; /* Gray button */
+    border-radius: 25px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.box:hover {
+    width: 140px;
+    background: #697565; /* Olive green hover */
+}
+
+.box .text {
+    display: none;
+}
+
+.box:hover .text {
+    display: flex;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 0.6px;
+}
+
+@media (max-width: 767px) {
+    #side {
+        position: absolute;
+        margin-left: -250px;
+    }
+
+    #side.active {
+        margin-left: 0;
+    }
+
+    .box {
+        width: 100px;
+        height: 35px;
+        border-radius: 60px;
+    }
+
+    .box:hover {
+        width: 100px;
+    }
+
+    .box .text {
+        display: flex;
+        font-size: 12px;
+    }
+}
+
+/* Carousel Styling */
+.carousel-inner {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.carousel-caption p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.carousel-caption button
+{
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: none;
+    border: 1px solid #ffffff;
+    width: 16%;
+}
+
+.carousel-caption button:hover
+{
+    border-radius: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    width: 16%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .carousel-caption button {
+        width: 22%;
+        font-size: 10px;
+    }
+
+    .carousel-caption p {
+        font-size: 10px;
+    }
+}
+
+.container{
+    margin-top: 50px;
+}
